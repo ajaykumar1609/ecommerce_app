@@ -1,0 +1,36 @@
+.imageslider > img{
+    width:100%;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
+    margin-bottom: -100px;
+}
+
+
+li.slick-active button::before{
+    color:white;
+}
+.slick-list {
+    overflow: visible;
+  }
+button{
+    z-index: 1;
+}
+
+
+ul li button::before{
+    font-size: 10px;
+    color: white;
+}
+
+.slick-next{
+    right: 20px !important;
+}
+
+.slick-dots{
+    bottom:5px !important;
+    color: white !important;
+}
+
+.slick-prev{
+    right: 20px !important;
+}
