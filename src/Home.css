@@ -17,26 +17,37 @@
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
-    
 }
 
 .home_row > Product{
     border-radius: 10px;
 }
-
+.imageslider{
+    align-items: center;
+    justify-content: center;
+}
 .imageslider > img{
+    justify-content:center;
+    align-items: center;
+    border-right: 25px;
     width:100%;
     z-index: -1;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
-    margin-bottom: -100px;
+    margin-bottom: -150px;
+    object-fit: contain;
+    
 }
 
-
+.isSlider{
+    justify-content:center;
+    align-items: center;
+}
 li.slick-active button::before{
     color:white;
 }
 .slick-list {
     overflow: visible;
+    overflow: scroll;
   }
 button{
     z-index: 1;

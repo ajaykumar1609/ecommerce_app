@@ -3,13 +3,15 @@
     padding: 20px;
     background-color: white;
     height: max-content;
+    justify-content: space-between;
 }
 .checkout_title{
-    margin-right: 10px;
-    padding: 10px;
+    padding-bottom: 5px;
     border-bottom: 1px solid grey;
 }
 
 .checkout_right{
-    
+    align-content: flex-end;
+    justify-content: end;
+
 }

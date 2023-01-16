@@ -1,36 +1,61 @@
-.imageslider > img{
-    width:100%;
-    z-index: -1;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
-    margin-bottom: -100px;
-}
-
-
-li.slick-active button::before{
-    color:white;
-}
-.slick-list {
-    overflow: visible;
+.image-slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:-200px ;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.3));
   }
-button{
-    z-index: 1;
-}
+  
+  .image-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 300px; */
+  }
+  
+  .image-slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-slider-buttons {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .image-slider-buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+  }
 
-
-ul li button::before{
-    font-size: 10px;
-    color: white;
-}
-
-.slick-next{
-    right: 20px !important;
-}
-
-.slick-dots{
-    bottom:5px !important;
-    color: white !important;
-}
-
-.slick-prev{
-    right: 20px !important;
-}
+  .image-slider-dots {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .image-slider-dot.active {
+    background-color: blue;
+  }
+  
