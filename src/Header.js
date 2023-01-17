@@ -19,9 +19,10 @@ function Header() {
     <div>
     <div className="header">
       <Link to="/">
-        <img className="header_logo" src="pngimg.com - amazon_PNG11.png" />
+        {/* <img className="header_logo" src="pngimg.com - amazon_PNG11.png" /> */}
+        <span className="header_logo">Shoppe</span>
       </Link>
-      <Search/>
+      
       <Link to={!user && "/login"}>
         <div className="header_nav">
           <div onClick={handleAuthentication} className="header_option">
@@ -40,12 +41,12 @@ function Header() {
           <div className="header_option_l2">&orders</div>
         </div>
       </div>
-      <div className="header_nav">
+      {/* <div className="header_nav">
         <div className="header_option">
           <div className="header_option_l1">your</div>
           <div className="header_option_l2">prime</div>
         </div>
-      </div>
+      </div> */}
       <Link to="/checkout">
         <div className="header_optionBasket">
           <ShoppingCartIcon />
@@ -54,6 +55,7 @@ function Header() {
           </span>
         </div>
       </Link>
+      <Search/>
       </div>
     </div>
     

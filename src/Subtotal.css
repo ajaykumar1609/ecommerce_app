@@ -15,11 +15,13 @@
 }
 
 .subtotal > button{
-    background-color:#f0c14b;
+    background-color:#7fd2d5;
     border: 1px solid black;
     margin-top: 10px;
 }
-
+.subtotal > button:hover{
+    background-color:#b2e1e2;
+}
 .subtotal_gift{
     display: flex;
 }

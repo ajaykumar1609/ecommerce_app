@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const images = [
   "avatar-the-way-of-water-4k-wallpaper-uhdpaper.com-91@1@h.jpg",
-  "avatar-the-way-of-water-4k-wallpaper-uhdpaper.com-91@1@h.jpg",
-  "avatar-the-way-of-water-4k-wallpaper-uhdpaper.com-91@1@h.jpg",
+  "avatar3.webp",
+  "avatar2.jpeg",
 ];
 function Home() {
   var settings = {
@@ -53,48 +53,48 @@ function Home() {
           <div className="home_row">
             <Product
               id="12345678"
-              image="hair_dryer.webp"
-              title="hair dryer"
-              price={69.69}
+              image="pm5.jpeg"
+              title="Shoes"
+              price={1500.00}
               rating={5}
             />
             <Product
               id="987654321"
-              image="hair_dryer.webp"
-              title="hair dryer"
-              price={69.69}
+              image="pm1.jpeg"
+              title="dslr camera"
+              price={69990.00}
               rating={5}
             />
           </div>
           <div className="home_row">
             <Product
               id="124536789"
-              image="hair_dryer.webp"
-              title="hair dryer"
-              price={69.69}
+              image="pm2.jpeg"
+              title="headphones"
+              price={690.00}
               rating={5}
             />
             <Product
               id="124357689"
-              image="hair_dryer.webp"
-              title="hair dryer"
-              price={69.69}
+              image="pm3.jpeg"
+              title="smart watch"
+              price={2999.00}
               rating={5}
             />
             <Product
               id="123456879"
-              image="hair_dryer.webp"
-              title="hair dryer"
-              price={69.69}
+              image="pm4.webp"
+              title="water bottle"
+              price={69.00}
               rating={5}
             />
           </div>
           <div className="home_row">
             <Product
               id="123256789"
-              image="hair_dryer.webp"
-              title="hair dryer"
-              price={69.69}
+              image="pm6.jpeg"
+              title="sun glasses"
+              price={1500.00}
               rating={5}
             />
           </div>

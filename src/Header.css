@@ -14,14 +14,17 @@
     width: 100px;
     margin: 0 20px;
     margin-top: 18px;
-    object-fit: contain;
+    color: #98dee0;
+    font-weight: bolder;
+    align-items: center;
+    letter-spacing: -0.05rem;
 }
 
 .header_searchIcon{
     padding: 5px;
     height:22px !important;
     border: 2px;
-    background-color:#f0c14b;
+    background-color:#7fd2d5;
 }
 .header_search{
     display: flex;
