@@ -4,6 +4,7 @@
     background-color: white;
     height: max-content;
     justify-content: space-between;
+    margin-top: 60px;
 }
 .checkout_title{
     padding-bottom: 5px;
