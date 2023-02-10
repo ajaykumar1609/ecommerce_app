@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    flex: 1;
+    font-weight: bolder;
+    align-items: center;
+    border-radius: 24px;
+    border: none;
+  }
+  
+  input[type="text"] {
+    height: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    /* background-image: url("/Users/kotaajaykumar/Git/amazon_clone/public/17995612_black_minimal_halftone_in_white_background.jpg"); */
+    background-repeat:repeat;
+  }
+  
+  button[type="submit"] {
+    background-color:#EE4E34;
+    cursor: pointer;
+    color: azure;
+    /* padding: 5px; */
+    height:32px !important;
+    border: none;
+  }
+  

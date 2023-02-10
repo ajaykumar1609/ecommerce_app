@@ -20,7 +20,6 @@ function Login() {
 
   const signOut = e =>{
     e.preventDefault();
-
     auth
       .signOut()
       .then((auth)=>{
@@ -42,23 +41,25 @@ function Login() {
   };
   return (
     <div className="login">
-      <Link to='/'>
-        {/* <img className="login_logo" src="amazon.png" alt="amazon_logo" /> */}
+      {/* <Link to='/'>
+        <img className="login_logo" src="amazon.png" alt="amazon_logo" />
         <span className="login_logo">Shoppe</span>
-      </Link>
+      </Link> */}
       <div className="login_container">
         <h1>Sign-in</h1>
         <form>
-          <h5>E-mail</h5>
+          {/* <h5>E-mail</h5> */}
           <input
             type="text"
             value={email}
+            placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
-          />
-          <h5>Password</h5>
+          /><br/>
+          {/* <h5>Password</h5> */}
           <input
             type="text"
             value={password}
+            placeholder="Password"
             onChange={(p) => setPassword(p.target.value)}
           />
           <button
@@ -73,7 +74,7 @@ function Login() {
           <input type="checkbox" />
           <small>By clicking this you agree to our privacy and policy</small>
         </div>
-        <button onClick={register}>Create Amazon account</button>
+        <button onClick={register}>Create Shopee account</button>
       </div>
     </div>
   );

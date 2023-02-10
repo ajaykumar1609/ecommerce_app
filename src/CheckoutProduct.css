@@ -3,6 +3,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+    background-color: rgba(251, 255, 255,0.7);
+    padding: 10px;
+    border-radius: 10px;
+
+    /* height: 100vw; */
 }
 
 .checkoutProduct__info {
@@ -10,17 +15,18 @@
 }
 
 .checkoutProduct__info > button {
-    background: #7fd2d5;
-    border: 1px solid;
+    background: rgb(238, 78, 52,1);
+    border: none;
+    padding: 7px;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
-    border-radius: 2px;
+    color: rgb(255, 251, 251);
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .checkoutProduct__info > button:hover{
-    background:#c0e6e7 ;
+    background:rgb(238, 78, 52,0.5) ;
 }
 .checkoutProduct__image {
     object-fit: contain;

@@ -13,52 +13,40 @@ function Header() {
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
-      }
+    }
   };
   return (
     <div>
-    <div className="header">
-      <Link to="/">
-        {/* <img className="header_logo" src="pngimg.com - amazon_PNG11.png" /> */}
-        <span className="header_logo">Shoppe</span>
-      </Link>
-      
-      <Link to={!user && "/login"}>
-        <div className="header_nav">
-          <div onClick={handleAuthentication} className="header_option">
-            <div className="header_option_l1">
-              <span>Hello {user?.email}</span>
-            </div>
-            <div className="header_option_l2">
-              <span>{user ? "Sign Out" : "Sign In"}</span>
+      <div className="header">
+        <Link to="/">
+          {/* <img className="header_logo" src="pngimg.com - amazon_PNG11.png" /> */}
+          {/* <span className="header_logo">Shoppe</span> */}
+          <img className="header_img" src="/pngwing.com (1).png" />
+        </Link>
+        <Search />
+        <Link to="/checkout">
+          <div className="header_optionBasket">
+            <ShoppingCartIcon style={{ fontSize: 18 }} />
+            <span className="header_option_l2 header_basketCount">
+              {basket?.length}
+            </span>
+          </div>
+        </Link>
+        <Link to={!user && "/login"}>
+          <div className="header_nav">
+            <div onClick={handleAuthentication} className="header_option">
+              <div className="header_option_l1">
+                <span>Hello {user?.email}</span>
+              </div>
+              <div className="header_option_l2">
+                <span>{user ? "Sign Out" : "Sign In"}</span>
+              </div>
             </div>
           </div>
-        </div>
-      </Link>
-      <div className="header_nav">
-        <div className="header_option">
-          <div className="header_option_l1">returns</div>
-          <div className="header_option_l2">&orders</div>
-        </div>
-      </div>
-      {/* <div className="header_nav">
-        <div className="header_option">
-          <div className="header_option_l1">your</div>
-          <div className="header_option_l2">prime</div>
-        </div>
-      </div> */}
-      <Link to="/checkout">
-        <div className="header_optionBasket">
-          <ShoppingCartIcon />
-          <span className="header_option_l2 header_basketCount">
-            {basket?.length}
-          </span>
-        </div>
-      </Link>
-      <Search/>
+        </Link>
+        
       </div>
     </div>
-    
   );
 }
 

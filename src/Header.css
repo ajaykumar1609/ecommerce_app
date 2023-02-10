@@ -1,21 +1,35 @@
 .header{
     display: flex;
     height: 60px;
-    background-color: white;
+    background-color: #FCEDDA;
     top: 0;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
+    border-bottom: 1px solid #787171;
+    justify-content: space-between;
     align-items: center;
-    background-color: black;
-    
+    /* background-color: rgb(250, 250, 250); */
 }
+.header_img{
+    background-color: none;
+    object-fit: contain;
+    max-height: 60px;
+    margin-left: 15px;
 
+}
+.header_rest{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
 .header_logo{
     width: 100px;
     margin: 0 20px;
     margin-top: 18px;
-    color: #98dee0;
+    color: #ffffff;
     font-weight: bolder;
     align-items: center;
     letter-spacing: -0.05rem;
@@ -24,23 +38,29 @@
 .header_searchIcon{
     padding: 5px;
     height:22px !important;
-    border: 2px;
-    background-color:#7fd2d5;
+    /* border: 2px; */
+    color: #000000;
+    /* border-top: 2px solid #f75f5f; */
+    border-left:2px solid #787171 ;
+    background-color:#EE4E34;
 }
 .header_search{
     display: flex;
     flex: 1;
+    margin-right: 5px;
     font-weight: bolder;
     align-items: center;
-    border-radius: 24px;
-    border: none;
-    
+    border: 2px solid#787171;
+    border-right:2px solid #787171 ;
+    /* border-radius: 24px; */
+    /* border: none;
+     */
 }
 
 .header_searching_input{
     height: 12px;
     padding: 10px;
-    width: 100%;
+    /* width: 100%; */
     border: none;
 }
 .header_nav{
@@ -51,8 +71,9 @@
     display: flex;
     flex-direction: column;
     margin: 0 10px;
-    color: white;
+    color: #1a1616;
     text-transform: capitalize;
+    
 }
 .header_option_l1{
     font-size: 10px;
@@ -64,11 +85,19 @@
 
 }
 .header_optionBasket{
-    color: white;
+    margin-left: 10px;
+    color: #252424;
     display: flex;
     align-items: center;
 }
 
 .header_basketCount{
-    margin: 0 10px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:500px){
+    .header_searching_input{
+        width: 15px;
+    }
+    
 }

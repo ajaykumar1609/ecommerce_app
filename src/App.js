@@ -13,6 +13,7 @@ import Login from "./Login";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Footer from "./Footer";
 
 function App() {
   const [{},dispatch] = useStateValue();
@@ -43,12 +44,18 @@ function App() {
           <Route exact path="/" element={<div>
             <Header/>
             <Home/>
+            <Footer/>
           </div>} />
           <Route exact path="/checkout" element={<div>
             <Header/>
             <Checkout/>
+            <Footer/>
           </div>} />
-          <Route exact path="/login" element={<Login/>}/>
+          <Route exact path="/login" element={<div>
+            <Header/>
+            <Login/>
+            <Footer/>
+          </div>}/>
         </Routes>
       </BrowserRouter>
     </div>

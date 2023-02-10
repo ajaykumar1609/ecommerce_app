@@ -1,18 +1,25 @@
 .checkout{
     display: flex;
     padding: 20px;
-    background-color: white;
+    background-image: radial-gradient(#FCEDDA,rgba(252, 237, 218,0.7));
     height: max-content;
     justify-content: space-between;
     margin-top: 60px;
+    min-height: 100vh;
 }
 .checkout_title{
     padding-bottom: 5px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .checkout_right{
     align-content: flex-end;
     justify-content: end;
 
+}
+@media only screen and (max-width:600px){
+    .checkout{
+        flex-direction: column;
+        min-height: max-content;
+    }
 }

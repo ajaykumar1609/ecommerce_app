@@ -9,7 +9,7 @@ function Checkout() {
     <div className='checkout'>
         <div className="checkout_left">
             <div className="checkout_title">
-                <h4>hello, {user?.email}</h4>
+                <h4>Hello, Ajay {user?.email}</h4>
                 <h2>Your Shopping Basket</h2>
             </div>
             {basket.map(item=>(
